@@ -120,7 +120,7 @@ export default function Chat() {
       const response = await sendMessageToChatbot(content);
       const botMessage = {
         id: (Date.now() + 1).toString(),
-        content: response.reply || "I'm sorry, I didn't understand that.",
+        content: response.data || "I'm sorry, I didn't understand that.",
         sender: "bot",
         timestamp: new Date(),
       };

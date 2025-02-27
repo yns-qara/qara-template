@@ -27,19 +27,12 @@ export const uploadProfile = async (name, image) => {
 
 // Send message
 export const sendMessageToChatbot = async (message) => {
-  // try {
-  //   const response = await api.post("/messages/send", { content: message });
-  //   return response.data;
-  // } catch (error) {
-  //   throw error.response?.data || "Error sending message";
-  // }
-  // wait 10sec then return a response
-  // await new Promise((resolve) => setTimeout(resolve, 5000));
-
-
-  return { reply: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem ducimus quod dignissimos. Voluptatem, nam molestiae? Unde porro deleniti molestias error reiciendis possimus, quos iusto atque at provident sequi sint? Quam ullam, ducimus ratione aperiam omnis odit quasi et debitis. Ullam." };
-  
-
+  try {
+    const response = await api.post("/api/chat", { content: message });
+    return response.data || { data: "", status: "" }; 
+  } catch (error) {
+    throw error.response?.data || "Error sending message";
+  }
 
 };
 
