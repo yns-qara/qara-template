@@ -1,0 +1,17 @@
+-- full landing page sections
+-- option sections (diffrent types of Menus)
+-- payment gateway integration
+-- make it easy for devs to customize the text, colors, fonts...
+-- add muliple languages
+-- secure authentication
+-- dark and light mode
+-- unified styling
+-- customized admin pannel
+-- custom mouse cursor
+-- pages :
+    -- 404 page
+    -- admin pannel
+    -- home page
+    -- contact us
+    -- terms and services
+    

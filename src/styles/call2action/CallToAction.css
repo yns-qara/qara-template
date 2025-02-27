@@ -1,0 +1,142 @@
+.call-to-action {
+    margin-top: 9rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+    padding: 2rem;
+    flex-wrap: wrap; /* Enables wrapping for smaller screens */
+    text-align: center; /* Center-align text for smaller screens */
+}
+
+/* Right Section */
+.cta-right {
+    max-width: 31rem;
+    flex: 1;
+}
+
+.call-img {
+    height: auto;
+    flex: 1;
+}
+
+.call-img img{
+    max-width: 70%;
+    height: auto;
+}
+
+.cta-right h1 {
+    color: #000;
+    font-family: Coolvetica, sans-serif;
+    font-size: 2.375rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+.cta-right p {
+    color: #000;
+    font-family: Archivo, sans-serif;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+/* Call-to-Action Button */
+.cta-right button {
+    color: #FFF;
+    font-family: Helvetica, sans-serif;
+    font-size: 1.125rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 1.5rem;
+    background: linear-gradient(135deg, #06F, #0047ab);
+    padding: 0.75rem 2.5rem;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.cta-right button:hover {
+    background: linear-gradient(135deg, #0047ab, #002c70);
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.cta-right button:active {
+    transform: scale(0.95);
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* SVG (WomanPhone) Styling */
+.call-to-action svg {
+    max-width: 100%;
+    /* height: auto; */
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .call-to-action {
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .cta-right h1 {
+        font-size: 2rem;
+    }
+
+    .cta-right p {
+        font-size: 1rem;
+    }
+
+    .cta-right button {
+        font-size: 1rem;
+        padding: 0.6rem 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .call-to-action {
+        flex-direction: column; /* Stack SVG and text vertically */
+        gap: 2rem;
+    }
+
+    .cta-right {
+        width: 100%;
+    }
+}
+
+@media (max-width: 700px){
+    .call-to-action{
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .cta-right h1 {
+        font-size: 1.75rem;
+    }
+
+    .cta-right p {
+        font-size: 0.9375rem;
+    }
+
+    .cta-right button {
+        font-size: 0.9375rem;
+        padding: 0.5rem 1.5rem;
+    }
+}

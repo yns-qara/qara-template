@@ -1,0 +1,120 @@
+@import url('https://fonts.cdnfonts.com/css/coolvetica');
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body,
+html {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+section {
+    padding-left: 20% !important;
+    padding-right: 20% !important;
+    transition: all 0.3s ease-in-out;
+    max-width: 125rem;
+    margin: auto;
+
+}
+
+@media screen and (max-width: 1580px) {
+    section {
+        padding-left: 7rem !important;
+        padding-right: 7rem !important;
+        transition: all 0.3s ease-in-out;
+        max-width: 125rem;
+        margin: auto;
+
+    }
+
+}
+
+@media all and (max-width: 935px) {
+    section {
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
+
+    }
+}
+
+
+/* hovers */
+
+/* .hover-btn:hover {
+    color: #dc0909;
+} */
+
+.hover-btn {
+    position: relative;
+    background-color: #dd7e2a;
+    border-color: #dd7e2a;
+    color: #fff;
+    overflow: hidden;
+}
+
+.hover-btn span {
+    position: relative;
+    left: -0.5em;
+    transition: all 0.25s;
+}
+
+.hover-btn::before,
+.hover-btn::after {
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: rgb(0, 67, 168);
+    transition: all 0.4s ease;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hover-btn::before {
+    width: 25px;
+    content: "";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "FontAwesome";
+    font-size: 10px;
+    font-weight: bold;
+    text-indent: 5px;
+    border-radius: 50% 0 0 50%;
+    z-index: 1;
+    transform: translate(2rem, 0);
+
+}
+
+.hover-btn::after {
+    width: 100%;
+    transform: translate(100%, 0);
+    content: attr(data-hover);
+    text-align: left;
+    text-indent: 8px;
+}
+
+.hover-btn:hover {
+    background-color: rgb(0, 67, 168);
+
+}
+
+.hover-btn:hover span {
+    left: -100%;
+}
+
+.hover-btn:hover::before {
+    right: 100%;
+}
+
+.hover-btn:hover::after {
+    right: 100%;
+}

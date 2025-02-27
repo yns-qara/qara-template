@@ -1,0 +1,149 @@
+.benifits-container {
+    margin-top: 7rem;
+    color: #000;
+    text-align: center;
+    font-family: Coolvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 2rem 1rem;
+}
+
+.benifits-container h1 {
+    margin-bottom: 4rem;
+    font-weight: 500;
+}
+
+.benifits-items {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    /* Allows wrapping on smaller screens */
+}
+
+/* Left and Right Sections */
+.benifits-left,
+.benifits-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 3rem;
+}
+
+/* Middle Section */
+.benifits-middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.benifits-middle .animated-video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Benefit Card */
+.benifit-card {
+    max-width: 20rem;
+    width: 100%;
+    text-align: center;
+}
+
+.benifit-card svg {
+    width: 3rem;
+    height: 3rem;
+    object-fit: cover;
+    border-radius: 0.8rem;
+    background: #06F;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.benifit-card h2 {
+    color: #000;
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.benifit-card p {
+    color: #000;
+    font-family: Archivo, sans-serif;
+    font-size: 0.9375rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    max-width: 14rem;
+    margin-top: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .benifits-items {
+        gap: 1rem;
+    }
+
+    .benifits-left,
+    .benifits-right {
+        gap: 2rem;
+    }
+
+    .benifits-middle {
+        display: none;
+        /* Hide middle illustration for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .benifits-items {
+        flex-direction: column;
+        /* Stack items vertically */
+        gap: 2rem;
+    }
+
+    .benifits-left,
+    .benifits-right {
+        align-items: center;
+        width: 100%;
+        /* Full width on smaller screens */
+    }
+
+    .benifit-card {
+        max-width: 18rem;
+        /* Slightly reduce card size */
+    }
+}
+
+@media (max-width: 480px) {
+    .benifits-container h1 {
+        font-size: 1.25rem;
+    }
+
+    .benifit-card {
+        max-width: 90%;
+        /* Further adjust card size for very small screens */
+    }
+
+    .benifit-card p {
+        font-size: 0.875rem;
+    }
+}
+
+
+/* Middle Section */
+.benifits-middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.benifits-middle.sticky {
+    position: sticky;
+    top: 0%;
+    /* Center the element vertically */
+    transform: translateY(-50%);
+}

@@ -1,0 +1,14 @@
+footer{
+    background-color: #FFF;
+    color: #77808B;
+    text-align: center;
+    padding: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-group{
+    max-width: 13rem;
+}
