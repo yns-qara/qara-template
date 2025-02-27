@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "https://your-api.com";
+const BASE_URL = "http://localhost:8080/";
 
 const api = axios.create({
   baseURL: BASE_URL, // Change this to your actual API URL
@@ -34,7 +34,7 @@ export const sendMessageToChatbot = async (message) => {
   //   throw error.response?.data || "Error sending message";
   // }
   // wait 10sec then return a response
-  await new Promise((resolve) => setTimeout(resolve, 5000));
+  // await new Promise((resolve) => setTimeout(resolve, 5000));
 
 
   return { reply: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem ducimus quod dignissimos. Voluptatem, nam molestiae? Unde porro deleniti molestias error reiciendis possimus, quos iusto atque at provident sequi sint? Quam ullam, ducimus ratione aperiam omnis odit quasi et debitis. Ullam." };
