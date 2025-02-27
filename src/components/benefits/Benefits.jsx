@@ -53,7 +53,7 @@ const Benifits = () => {
 
     return (
         <section className="benifits-container" ref={ref}>
-            <h1>Let's optimize your business</h1>
+            <h1>Let's shape your business</h1>
             <div className="benifits-items">
                 {/* Left Section */}
                 <motion.div
@@ -65,43 +65,43 @@ const Benifits = () => {
                     <motion.div variants={cardVariants}>
                         <BenefitCard
                             img={<Benifit1 />}
-                            title="Pushes the brand"
-                            description="Increase chances for double impressions with a dual approach plus coverage of all CSS markets."
+                            title="Lightning-Fast Responses"
+                            description="Precomputed queries and optimized execution ensure near-instant replies, making conversations seamless and engaging."
                         />
                     </motion.div>
                     <motion.div variants={cardVariants}>
                         <BenefitCard
                             img={<Benifit2 />}
-                            title="Reduces costs"
-                            description="Up to 20% bid discount to either reinvest or just save on ad spend."
+                            title="AI-Driven Intelligence"
+                            description="Powered by advanced deep learning, the chatbot understands context, adapts to user input, and provides human-like responses."
                         />
                     </motion.div>
                     <motion.div variants={cardVariants}>
                         <BenefitCard
                             img={<Benifit1 />}
-                            title="Pushes the brand"
-                            description="Increase chances for double impressions with a dual approach plus coverage of all CSS markets."
+                            title="Scalable & Database-Agnostic"
+                            description="Supports SQL, NoSQL, JPA (Hibernate), and R2DBC, allowing smooth integration with any database architecture."
                         />
                     </motion.div>
                     <motion.div variants={cardVariants}>
                         <BenefitCard
                             img={<Benifit2 />}
-                            title="Reduces costs"
-                            description="Up to 20% bid discount to either reinvest or just save on ad spend."
+                            title="Enterprise-Grade Security"
+                            description="With Micronaut Security, your data is fully protected using authentication, authorization, and access control mechanisms."
                         />
                     </motion.div>
                     <motion.div variants={cardVariants}>
                         <BenefitCard
                             img={<Benifit1 />}
-                            title="Pushes the brand"
-                            description="Increase chances for double impressions with a dual approach plus coverage of all CSS markets."
+                            title="Advanced Logging & Monitoring"
+                            description="Integrated with Logback and other logging frameworks, ensuring real-time insights and complete visibility into chatbot interactions."
                         />
                     </motion.div>
                     <motion.div variants={cardVariants}>
                         <BenefitCard
                             img={<Benifit2 />}
-                            title="Reduces costs"
-                            description="Up to 20% bid discount to either reinvest or just save on ad spend."
+                            title="Full Tracing & Debugging Support"
+                            description="Utilizes OpenTelemetry, Zipkin, and Jaeger, enabling in-depth tracking of user interactions and chatbot performance."
                         />
                     </motion.div>
                 </motion.div>
@@ -132,43 +132,43 @@ const Benifits = () => {
                     <motion.div variants={cardVariants}>
                         <BenefitCard
                             img={<Benifit3 />}
-                            title="Increases traffic"
-                            description="Added visibility from placement of products on one of Europe's largest CSS networks."
+                            title="Multi-Cloud Storage Support"
+                            description="Seamlessly integrates with AWS S3, Azure Blob Storage, Google Cloud Storage, and Oracle Object Storage, ensuring flexible data management."
                         />
                     </motion.div>
                     <motion.div variants={cardVariants}>
                         <BenefitCard
                             img={<Benifit4 />}
-                            title="Enhances efficiency"
-                            description="Higher bids with the same amount of advertisement expenses."
+                            title="Cost-Efficient & Lightweight"
+                            description="Built on Micronaut’s lightweight runtime, reducing infrastructure costs while maximizing performance."
                         />
                     </motion.div>
                     <motion.div variants={cardVariants}>
                         <BenefitCard
                             img={<Benifit3 />}
-                            title="Increases traffic"
-                            description="Added visibility from placement of products on one of Europe's largest CSS networks."
+                            title="Customizable & Extendable"
+                            description="Easily integrate new AI models, APIs, and custom workflows to meet your business-specific requirements."
                         />
                     </motion.div>
                     <motion.div variants={cardVariants}>
                         <BenefitCard
                             img={<Benifit4 />}
-                            title="Enhances efficiency"
-                            description="Higher bids with the same amount of advertisement expenses."
+                            title="Multi-Channel Deployment"
+                            description="Deploy across web apps, mobile apps, and messaging platforms like WhatsApp, Slack, or Facebook Messenger."
                         />
                     </motion.div>
                     <motion.div variants={cardVariants}>
                         <BenefitCard
                             img={<Benifit3 />}
-                            title="Increases traffic"
-                            description="Added visibility from placement of products on one of Europe's largest CSS networks."
+                            title="Smart Analytics & Metrics"
+                            description="Built-in Micrometer integration provides real-time performance tracking, user engagement insights, and chatbot efficiency reports."
                         />
                     </motion.div>
                     <motion.div variants={cardVariants}>
                         <BenefitCard
                             img={<Benifit4 />}
-                            title="Enhances efficiency"
-                            description="Higher bids with the same amount of advertisement expenses."
+                            title="Hassle-Free Maintenance & Updates"
+                            description="Modular architecture ensures effortless scaling, updates, and feature enhancements without downtime."
                         />
                     </motion.div>
                 </motion.div>

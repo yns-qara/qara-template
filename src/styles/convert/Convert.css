@@ -3,15 +3,19 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 2rem; /* Space between elements */
+    gap: 2rem;
+    /* Space between elements */
     padding: 2rem;
-    flex-wrap: wrap; /* Ensures wrapping on smaller screens */
+    flex-wrap: wrap;
+    /* Ensures wrapping on smaller screens */
 }
 
 /* Left Section Styling */
 .convert-left {
-    flex: 1; /* Responsive resizing */
-    animation: slideInLeft 1s ease-in-out; /* Left-to-right animation */
+    flex: 1;
+    /* Responsive resizing */
+    animation: slideInLeft 1s ease-in-out;
+    /* Left-to-right animation */
 }
 
 .convert-left h2 {
@@ -38,12 +42,14 @@
     margin-bottom: 1rem;
     position: relative;
     padding-left: 1.5rem;
-    animation: fadeIn 1.5s ease-in-out; /* Fade-in animation */
+    animation: fadeIn 1.5s ease-in-out;
+    /* Fade-in animation */
 }
 
 /* Add custom list icon */
 .convert-left ul li::before {
-    content: '✔'; /* Customize with desired icon */
+    content: '✔';
+    /* Customize with desired icon */
     color: #06F;
     position: absolute;
     left: 0;
@@ -52,22 +58,29 @@
 
 /* Right Section Styling */
 .convert-right {
-    flex: 1; /* Responsive resizing */
+    flex: 1;
+    /* Responsive resizing */
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: slideInRight 1s ease-in-out; /* Right-to-left animation */
+    animation: slideInRight 1s ease-in-out;
+    /* Right-to-left animation */
 }
 
 .convert-right img {
-    max-width: 40%;
+    max-width: 100%;
     height: auto;
     border-radius: 0.5rem;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Hover effect */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    /* Hover effect */
+    padding: 2rem;
+    background-color: #06F;
+    border-radius: 2rem;
 }
 
 .convert-right img:hover {
-    transform: scale(1.05); /* Slight zoom-in on hover */
+    transform: scale(1.05);
+    /* Slight zoom-in on hover */
 }
 
 /* Animations */
@@ -76,6 +89,7 @@
         opacity: 0;
         transform: translateX(-50px);
     }
+
     to {
         opacity: 1;
         transform: translateX(0);
@@ -87,6 +101,7 @@
         opacity: 0;
         transform: translateX(50px);
     }
+
     to {
         opacity: 1;
         transform: translateX(0);
@@ -98,6 +113,7 @@
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -121,8 +137,10 @@
 
 @media (max-width: 768px) {
     .convert-container {
-        flex-direction: column; /* Stacks sections vertically */
-        text-align: center; /* Center-align content */
+        flex-direction: column;
+        /* Stacks sections vertically */
+        text-align: center;
+        /* Center-align content */
         margin-top: 0;
     }
 

@@ -22,7 +22,9 @@ const Navigation = () => {
             <section>
                 <nav className="nav-bar">
                     <div className="logo-nav">
-                        <Logo />
+                        {/* <Logo /> */}
+                        <img src="/robot.ico" alt="Chat-bot" className="w-8 h-8" />
+
                     </div>
                     <div className="menu-icon" onClick={toggleMenu}>
                         {isMenuOpen ? <FiX size={30} /> : <FiMenu size={30} />}
@@ -41,7 +43,7 @@ const Navigation = () => {
                                 <li onClick={toggleMenu}><a href="#">Clients</a></li>
                                 <li onClick={toggleMenu}><a href="#">About us</a></li>
                                 <li onClick={toggleMenu}><a href="#">Events</a></li>
-                                <li  onClick={handleOpenModal}><a href="#">Contact Us</a></li>
+                                <li onClick={handleOpenModal}><a href="#">Contact Us</a></li>
                             </ul>
                         </div>
                     )}

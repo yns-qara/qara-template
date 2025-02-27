@@ -51,23 +51,24 @@ const Convert = () => {
     >
       {/* Animated Left Section */}
       <motion.div className="convert-left" variants={leftVariants}>
-        <h2>Convert seamlessly</h2>
+        <h2>Enhance Conversations with AI</h2>
         <motion.ul>
           <motion.li variants={listItemVariants}>
-            Seamlessly switch over from any CSS
+            Experience real-time, intelligent responses
           </motion.li>
           <motion.li variants={listItemVariants}>
-            Benefit from fast, proactive communication
+            Automate customer interactions with precision
           </motion.li>
           <motion.li variants={listItemVariants}>
-            Enjoy flexible and transparent contracts
+            Ensure secure and seamless AI-driven support
           </motion.li>
         </motion.ul>
       </motion.div>
 
       {/* Animated Right Section */}
       <motion.div className="convert-right" variants={rightVariants}>
-        <img src="/images/3d-stand.png" alt="Conversion Illustration" />
+        {/* <img src="/images/3d-stand.png" alt="Conversion Illustration" /> */}
+        <img src="/images/chatbot.png" alt="Conversion Illustration" />
       </motion.div>
     </motion.section>
   );

@@ -2,10 +2,12 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import '../../styles/hero/Hero.css';
+import { useNavigate } from "react-router-dom";
 
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 const Hero = () => {
     const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
+    const navigate = useNavigate();
 
     return (
         <motion.section
@@ -22,16 +24,17 @@ const Hero = () => {
                 transition={{ duration: 1, ease: 'easeOut' }}
             >
                 <h1>
-                    Lorem ipsum dolor sit <span>Lorem ipsum</span> Lorem ipsum dolor
+                    Meet Your Smartest <span>AI Chatbot</span>
                 </h1>
                 <p>
-                    Velit culpa optio ipsum quas nostrum <span>save up to 20% on your Lorem</span> with LOrem.
+                Where advanced AI meets <span>cloud technology</span> for fast, intelligent, and personalized conversations.
                 </p>
                 <div className="btns-hero">
                     <motion.button
                         className="hero-button hover-btn"
                         data-hover="Click me!"
                         whileTap={{ scale: 0.95 }}
+                        onClick={() => navigate("/chat")}
                     >
                         <span>Start Now</span>
                         {/* <MdKeyboardDoubleArrowRight /> */}

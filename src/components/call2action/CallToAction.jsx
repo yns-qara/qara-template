@@ -2,13 +2,13 @@ import React, { useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import '../../styles/call2action/CallToAction.css';
-
+import { useNavigate } from 'react-router-dom';
 // import WomanPhone from '../svg/WomanPhone';
 
 const CallToAction = () => {
   const controls = useAnimation();
   const [ref, inView] = useInView({ threshold: 0.2 });
-
+  const navigate = useNavigate();
   useEffect(() => {
     if (inView) {
       controls.start('visible');
@@ -63,14 +63,15 @@ const CallToAction = () => {
       {/* Animated Right Content */}
       <motion.div className="cta-right">
         <motion.h1 variants={textVariants}>
-          Reach more customers with your Shopping Ads
+        Engage More Users with Your AI-Powered Chatbot
         </motion.h1>
         <motion.p variants={textVariants}>
-          We don't believe in a one-size-fits-all approach. With our integrated
-          multichannel approach, we connect campaigns and align them with your
-          individual business goals.
+          Don't settle for an ordinary chatbot. Upgrade to an AI assistant that truly understands, interacts, and adapts.
         </motion.p>
-        <motion.button variants={textVariants}>Start Now</motion.button>
+        <motion.button
+        
+        onClick={() => navigate('/chat')}
+        variants={textVariants}>Start Now</motion.button>
       </motion.div>
     </motion.section>
   );
